@@ -11,10 +11,10 @@ public class OnlinePurchaseManager
   */
   public int countElectronicsByMaker(String maker)
   {
-    int c= 0;
+    int c = 0;
     /* to be implemented in part (a) */
     for (int i = 0 ; i < purchases.size();i++){
-      if (purchases.get(i).isElectronic()&&purchases.get(i).equals(maker)){
+      if (purchases.get(i).isElectronic() &&purchases.get(i).equals(maker)){
         c++;
       }
     }
@@ -31,10 +31,10 @@ public class OnlinePurchaseManager
       if (purchases.get(i).equals(purchases.get(i + 1))){
         return true;
       }
-     
   }
-     return false ;
+     return false;
   }
+  
   public OnlinePurchaseManager()
   {
     purchases = new ArrayList <Gizmo>();
