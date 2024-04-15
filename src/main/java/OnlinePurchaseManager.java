@@ -33,6 +33,7 @@ public class OnlinePurchaseManager
       }
       return false ;
   }
+  }
   public OnlinePurchaseManager()
   {
     purchases = new ArrayList <Gizmo>();
