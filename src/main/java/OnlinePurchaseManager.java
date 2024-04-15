@@ -14,7 +14,7 @@ public class OnlinePurchaseManager
     int c= 0;
     /* to be implemented in part (a) */
     for (int i = 0 ; i < purchases.size();i++){
-      if (purchases.getMaker().equals(maker)){
+      if (purchases.get(i).equals(maker)){
         c++;
       }
     }
@@ -27,7 +27,7 @@ public class OnlinePurchaseManager
   public boolean hasAdjacentEqualPair()
   {
     /* to be implemented in part (b) */
-    for (int i = 0 ; i < purchases.length-2;i++){
+    for (int i = 0 ; i < purchases.size()-2;i++){
       if (purchases.get(i).equals(purchase.get(i + 2))){
         return false;
       }
